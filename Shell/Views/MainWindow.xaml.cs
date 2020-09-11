@@ -8,7 +8,7 @@ using System.Timers;
 using System.Windows;
 using Unity;
 
-namespace Shell.Views
+namespace Audiot.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

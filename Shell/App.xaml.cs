@@ -1,11 +1,11 @@
-﻿using AudiotMainWindow;
+﻿using Audiot.Views;
+using AudiotMainWindow;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Unity;
-using Shell.Views;
 using System.Windows;
 
-namespace Shell
+namespace Audiot
 {
     /// <summary>
     /// Interaction logic for App.xaml

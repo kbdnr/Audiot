@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{5E017678-CA05-4458-A957-2ABDD07EC1C2}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiotMainWindow", "AudiotM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiotLogic", "AudiotLogic\AudiotLogic.csproj", "{A185AE2C-D4AA-4D2A-9F1B-C7C2A47EAB18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shell", "Shell\Shell.csproj", "{B0F690F5-60AB-46BD-80C8-57B79AC9C4FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audiot", "Shell\Audiot.csproj", "{B0F690F5-60AB-46BD-80C8-57B79AC9C4FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiotTests", "AudiotTests\AudiotTests.csproj", "{2817299C-F7CA-4932-9E52-15A3C59CCE26}"
 EndProject

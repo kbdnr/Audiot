@@ -1,8 +1,8 @@
-﻿<prism:PrismApplication x:Class="Shell.App"
+﻿<prism:PrismApplication x:Class="Audiot.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"
-             xmlns:local="clr-namespace:Shell">
+             xmlns:local="clr-namespace:Audiot">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

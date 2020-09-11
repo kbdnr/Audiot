@@ -4,7 +4,7 @@ using Prism.Events;
 using Prism.Logging;
 using Prism.Mvvm;
 
-namespace Shell.ViewModels
+namespace Audiot.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
