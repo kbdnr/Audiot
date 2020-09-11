@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="AudiotMainWindow.Views.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AudiotMainWindow.Views"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" 
+             d:DesignWidth="800" d:DesignHeight="500"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True" Height="Auto" Width="Auto">
+
+    <DockPanel Width="Auto" Height="Auto">
+        <Grid Width="Auto" Height="90" VerticalAlignment="Top" DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="0">
+                <TextBlock Text="MIDI I:" VerticalAlignment="Center" Margin="10"/>
+                <ComboBox HorizontalAlignment="Left" Width="150" Height="30" ItemsSource="{Binding MidiIDevices}" SelectedIndex="{Binding MidiIIndex}" VerticalAlignment="Center" Margin="0,0,20,0"/>
+                <TextBlock Text="MIDI O:" VerticalAlignment="Center" Margin="10"/>
+                <ComboBox HorizontalAlignment="Left" Width="150" Height="30" ItemsSource="{Binding MidiODevices}" SelectedIndex="{Binding MidiOIndex}" VerticalAlignment="Center" Margin="0,0,20,0"/>    
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="ASIO Device:" VerticalAlignment="Center" Margin="10"/>
+                <ComboBox HorizontalAlignment="Right" VerticalAlignment="Center" Width="150" Height="30" ItemsSource="{Binding AsioDevices}" SelectedItem="{Binding SelectedAsio}" Margin="0,0,20,0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Button x:Name="StartDeviecs" Width="80" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" Command="{Binding StartDevicesCommand}" IsEnabled="{Binding DeviceEnable}">
+                    Start
+                </Button>
+                <Button x:Name="StopDevices" Width="80" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" Command="{Binding StopDevicesCommand}" IsEnabled="{Binding DeviceDisable}">
+                    Stop
+                </Button>
+
+                <Button x:Name="CreateMidi" Width="120" Height="30" HorizontalAlignment="Right"  VerticalAlignment="Center" Margin="20,0,0,0" Command="{Binding LoadMidiModuleCommand}" IsEnabled="{Binding DeviceDisable}">
+                    New Midi 
+                </Button>
+                <Button x:Name="DeleteMidi" Width="120" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0,0,0" Command="{Binding DestroyMidiModuleCommand}" IsEnabled="{Binding DeviceDisable}">
+                    Delete Midi
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid HorizontalAlignment="Center" DockPanel.Dock="Bottom" Height="Auto">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" CanHorizontallyScroll="True">
+                <ContentControl prism:RegionManager.RegionName="MidiRegion1" Width="Auto" Height="Auto" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.IsSharedSizeScope="True"/>
+                <ContentControl prism:RegionManager.RegionName="MidiRegion2" Width="Auto" Height="Auto" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.IsSharedSizeScope="True"/>
+                <ContentControl prism:RegionManager.RegionName="MidiRegion3" Width="Auto" Height="Auto" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.IsSharedSizeScope="True"/>
+                <ContentControl prism:RegionManager.RegionName="MidiRegion4" Width="Auto" Height="Auto" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.IsSharedSizeScope="True"/>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</UserControl>

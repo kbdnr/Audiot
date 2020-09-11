@@ -1,0 +1,55 @@
+﻿<Window x:Class="AudiotPrism.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525"
+        >
+
+    <DockPanel LastChildFill="True">
+        <Menu x:Name="MainMenu" DockPanel.Dock="Top" Height="28" VerticalAlignment="Top" Width="Auto" FontSize="12" BorderBrush="#FF832727" OpacityMask="#FF492929" Opacity="0.8">
+            <!-- For left justified icons and right justified help -->
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel HorizontalAlignment="Stretch"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+
+            <!-- Shadow Effect for visibility -->
+            <Menu.BitmapEffect>
+                <DropShadowBitmapEffect/>
+            </Menu.BitmapEffect>
+            
+            <MenuItem x:Name="MenuFile" Header="_File" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Height="28">
+                <MenuItem x:Name="MenuNew" Header="_New" Icon="{materialDesign:PackIcon Kind=File}" FontSize="12" Command="{Binding NewCommand}" MouseEnter="MenuNew_MouseEnter" MouseLeave="MenuNew_MouseLeave" />
+                <MenuItem x:Name="MenuSave" Header="_Save" Icon="{materialDesign:PackIcon Kind=ContentSave}" FontSize="12" Command="{Binding SaveCommand}" MouseEnter="MenuSave_MouseEnter" MouseLeave="MenuSave_MouseLeave"/>
+                <Separator/>
+                <MenuItem x:Name="MenuPrint" Header="_Print" Icon="{materialDesign:PackIcon Kind=Printer}" FontSize="12" Command="{Binding PrintCommand}" MouseEnter="MenuPrint_MouseEnter" MouseLeave="MenuPrint_MouseLeave"/>
+                <Separator/>
+                <MenuItem x:Name="MenuExit" Header="E_xit" Icon="{materialDesign:PackIcon Kind=Close}" FontSize="12" Click="MenuExit_Click" MouseEnter="MenuExit_MouseEnter" MouseLeave="MenuExit_MouseLeave"/>
+            </MenuItem>
+            
+            <MenuItem Header="_Edit" VerticalAlignment="Center" HorizontalAlignment="Left" Height="28" Width="80">
+                <MenuItem x:Name="MenuCut" Header="Cut" Icon="{materialDesign:PackIcon Kind=ContentCut}" FontSize="12" MouseEnter="MenuCut_MouseEnter" MouseLeave="MenuCut_MouseLeave"/>
+                <MenuItem x:Name="MenuCopy" Header="Copy" Icon="{materialDesign:PackIcon Kind=ContentCopy}" FontSize="12" MouseEnter="MenuCopy_MouseEnter" MouseLeave="MenuCopy_MouseLeave"/>
+                <MenuItem x:Name="MenuPaste" Header="Paste" Icon="{materialDesign:PackIcon Kind=ContentPaste}" FontSize="12" MouseEnter="MenuPaste_MouseEnter" MouseLeave="MenuPaste_MouseLeave"/>
+            </MenuItem>
+
+            <MenuItem Header="_Help" VerticalAlignment="Center" HorizontalAlignment="Right" Height="28" Width="80" FlowDirection="RightToLeft">
+                <MenuItem x:Name="MenuHelp" Header="_Help" Icon="{materialDesign:PackIcon Kind=Help}" FlowDirection="LeftToRight" FontSize="12" MouseEnter="MenuHelp_MouseEnter" MouseLeave="MenuHelp_MouseLeave" />
+                <Separator/>
+                <MenuItem x:Name="MenuAbout" Header="_About" Icon="{materialDesign:PackIcon Kind=Information}" FlowDirection="LeftToRight"  FontSize="12" 
+                          MouseEnter="MenuAbout_MouseEnter" MouseLeave="MenuAbout_MouseLeave" Click="MenuAbout_Click"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Height="20" VerticalAlignment="Top" Width="Auto">
+            <StatusBarItem HorizontalAlignment="Left">
+                <TextBlock x:Name="StatusTextBlock" Text="{Binding StatusText}"/>
+            </StatusBarItem>
+
+            <StatusBarItem HorizontalAlignment="Right" Content="{Binding Source={StaticResource ticker}, Path=Now, Mode=OneWay}"/>
+        </StatusBar>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" Width="Auto" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.IsSharedSizeScope="True"/>
+    </DockPanel>
+</Window>

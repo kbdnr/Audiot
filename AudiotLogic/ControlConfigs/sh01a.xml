@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ControlChangeCollection>
+<ControlChanges>
+	<ControlChange>
+		<CC>1</CC>
+		<Name>Modulation</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>3</CC>
+		<Name>LFO Rate</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>5</CC>
+		<Name>Portamento Time</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>11</CC>
+		<Name>Expression Pedal</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>12</CC>
+		<Name>LFO Wave Form</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>13</CC>
+		<Name>VCO Mod Depth</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>14</CC>
+		<Name>VCO Range</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>15</CC>
+		<Name>VCO Pulse Width</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>16</CC>
+		<Name>VCO PWM Source</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>17</CC>
+		<Name>VCO Mod Sens</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>18</CC>
+		<Name>VCO Bend Depth</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>19</CC>
+		<Name>VCO PWM Level</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>20</CC>
+		<Name>VCO Saw Level</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>21</CC>
+		<Name>VCO Sub Level</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>22</CC>
+		<Name>VCO Sub Type</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>23</CC>
+		<Name>VCO Noise Level</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>24</CC>
+		<Name>VCF Env Depth</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>25</CC>
+		<Name>VCF Mod Depth</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>26</CC>
+		<Name>VCF Key Follow</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>27</CC>
+		<Name>VCF Bend Depth</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>28</CC>
+		<Name>VCA Env SW</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>29</CC>
+		<Name>VCA Env Mode</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>30</CC>
+		<Name>Env Sustain</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>31</CC>
+		<Name>Portament Mode</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>64</CC>
+		<Name>Hold</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>65</CC>
+		<Name>Portamento</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>71</CC>
+		<Name>VCF Resonance</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>72</CC>
+		<Name>Env Release</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>73</CC>
+		<Name>Env Attack</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>74</CC>
+		<Name>VCF Cutoff</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>75</CC>
+		<Name>Env Decay</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>76</CC>
+		<Name>Tune</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>77</CC>
+		<Name>Transpose SW</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>78</CC>
+		<Name>Noise Mode</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>79</CC>
+		<Name>LFO Mode</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>80</CC>
+		<Name>Assign Mode</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>81</CC>
+		<Name>Chord Voice 2 SW</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>82</CC>
+		<Name>Chord Voice 3 SW</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>83</CC>
+		<Name>Chord Voice 4 SW</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>85</CC>
+		<Name>Chord Voice 2 Key Shift</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>86</CC>
+		<Name>Chord Voice 3 Key Shift</Name>
+	</ControlChange>
+	<ControlChange>
+		<CC>87</CC>
+		<Name>Chord Voice 4 Key Shift</Name>
+	</ControlChange>
+</ControlChanges>
+</ControlChangeCollection>

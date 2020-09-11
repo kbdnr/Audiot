@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="AudiotModule.Views.ControlChangeLine"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AudiotModule.Views"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" Width="350">
+    
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+        <CheckBox VerticalAlignment="Center" Margin="5"/>
+        <ComboBox x:Name="ParameterComboBox" ItemsSource="{Binding ConfigItems}" SelectedItem="{Binding SelectedParameter}" DisplayMemberPath="Name" Width="150"/>
+        <Slider x:Name="CC" Minimum="0" Maximum="127" Height="20" Margin="5" Value="{Binding CCValue}" Width="100" VerticalAlignment="Center"/>
+        <Label Content="{Binding CCValue}" VerticalAlignment="Center" Width="50"/>
+    </StackPanel>
+</UserControl>

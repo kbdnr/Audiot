@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ControlChangeCollection>
+  <ControlChanges>
+    <ControlChange>
+      <CC>3</CC>
+      <Name>LFO Rate</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>13</CC>
+      <Name>LFO VCO Amount</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>12</CC>
+      <Name>LFO VCF Amount</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>87</CC>
+      <Name>LFO Midi Sync</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>86</CC>
+      <Name>LFO Sync Clock Div</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>82</CC>
+      <Name>LFO Key Trigger</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>70</CC>
+      <Name>VCO 1 Wave</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>71</CC>
+      <Name>VCO 2 Wave</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>17</CC>
+      <Name>VCO 2 Freq</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>18</CC>
+      <Name>VCO 2 Beat</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>81</CC>
+      <Name>Note Sync</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>5</CC>
+      <Name>Glide Rate</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>65</CC>
+      <Name>Glide Switch</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>92</CC>
+      <Name>Glide Type</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>83</CC>
+      <Name>Legato Glide</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>15</CC>
+      <Name>VCO 1 Mix</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>16</CC>
+      <Name>VCO 2 Mix</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>27</CC>
+      <Name>External In Mix</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>19</CC>
+      <Name>Filter Cutoff</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>21</CC>
+      <Name>Filter Resonance</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>22</CC>
+      <Name>EG Amount</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>20</CC>
+      <Name>Filter KB Track</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>89</CC>
+      <Name>Filter Velocity Sensitivity</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>23</CC>
+      <Name>VCF Attack</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>24</CC>
+      <Name>VCF Decay/Release</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>25</CC>
+      <Name>VCF Sustain</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>28</CC>
+      <Name>VCA Attack</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>29</CC>
+      <Name>VCA Decay/Release</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>30</CC>
+      <Name>VCA Sustain</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>72</CC>
+      <Name>Release Switch</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>73</CC>
+      <Name>Trigger Mode</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>7</CC>
+      <Name>VCA Output Level</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>90</CC>
+      <Name>Volume Velocity Sensitivity</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>91</CC>
+      <Name>Key Priority</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>1</CC>
+      <Name>Mod Wheel</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>107</CC>
+      <Name>Bend Up Amount</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>108</CC>
+      <Name>Bend Down Amount</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>122</CC>
+      <Name>Local Control Off</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>120</CC>
+      <Name>All Sounds Off</Name>
+      <Range>127</Range>
+    </ControlChange>
+    <ControlChange>
+      <CC>123</CC>
+      <Name>All Notes Off</Name>
+      <Range>127</Range>
+    </ControlChange>
+  </ControlChanges>
+</ControlChangeCollection>

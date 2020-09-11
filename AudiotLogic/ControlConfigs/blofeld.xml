@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ControlChangeCollection>
+<ControlChanges>
+	<ControlChange>
+		<CC>1</CC>
+		<Name>Modulation</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>2</CC>
+		<Name>Breath Control</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>4</CC>
+		<Name>Foot Control</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>5</CC>
+		<Name>Glide Rate</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>7</CC>
+		<Name>Channel Volume</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>10</CC>
+		<Name>Pan</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>12</CC>
+		<Name>Arp Range</Name>
+		<Range>9</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>13</CC>
+		<Name>Arp Length</Name>
+		<Range>15</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>14</CC>
+		<Name>Arp Active</Name>
+		<Range>3</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>15</CC>
+		<Name>LFO 1 Shape</Name>
+		<Range>5</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>16</CC>
+		<Name>LFO 1 Speed</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>17</CC>
+		<Name>LFO 1 Sync</Name>
+		<Range>1</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>18</CC>
+		<Name>LFO 1 Delay</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>19</CC>
+		<Name>LFO 2 Shape</Name>
+		<Range>5</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>20</CC>
+		<Name>LFO 2 Speed</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>21</CC>
+		<Name>LFO 2 Sync</Name>
+		<Range>1</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>22</CC>
+		<Name>LFO 2 Delay</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>23</CC>
+		<Name>LFO 3 Shape</Name>
+		<Range>5</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>24</CC>
+		<Name>LFO 3 Speed</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>25</CC>
+		<Name>LFO 3 Sync</Name>
+		<Range>1</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>26</CC>
+		<Name>LFO 3 Delay</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>27</CC>
+		<Name>Osc 1 Octave</Name>
+		<Range>127</Range>
+	</ControlChange>
+	<ControlChange>
+		<CC>28</CC>
+		<Name>Osc 1 Semitone</Name>
+		<Range>52-76</Range>
+	</ControlChange>
+  <ControlChange>
+    <CC>29</CC>
+    <Name>Osc 1 Detune</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>30</CC>
+    <Name>Osc 1 FM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>31</CC>
+    <Name>Osct 1 Shape</Name>
+    <Range>5</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>32</CC>
+    <Name>Bank Select</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>33</CC>
+    <Name>Osc 1 PW</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>34</CC>
+    <Name>Osc 1 PWM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>35</CC>
+    <Name>Osc 2 Octave</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>36</CC>
+    <Name>Osc 2 Semitone</Name>
+    <Range>52-76</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>37</CC>
+    <Name>Osc 2 Detune</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>38</CC>
+    <Name>Osc 2 FM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>39</CC>
+    <Name>Osc 2 Shape</Name>
+    <Range>5</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>40</CC>
+    <Name>Osc 2 PW</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>41</CC>
+    <Name>Osc 2 PWM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>42</CC>
+    <Name>Osc 3 Octave</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>43</CC>
+    <Name>Osc 3 Semitone</Name>
+    <Range>56-72</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>44</CC>
+    <Name>Osc 3 Detune</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>45</CC>
+    <Name>Osc 3 FM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>46</CC>
+    <Name>Osc 3 Shape</Name>
+    <Range>5</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>47</CC>
+    <Name>Osc 3 PW</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>48</CC>
+    <Name>Osc 3 PWM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>49</CC>
+    <Name>Sync</Name>
+    <Range>1</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>50</CC>
+    <Name>Pitchmod</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>51</CC>
+    <Name>Glide Mode</Name>
+    <Range>9</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>52</CC>
+    <Name>Osc 1 Level</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>53</CC>
+    <Name>Osc 1 Balance</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>54</CC>
+    <Name>Ringmod Level</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>55</CC>
+    <Name>Ringmod Balance</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>56</CC>
+    <Name>Osc 2 Level</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>57</CC>
+    <Name>Osc 2 Balance</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>58</CC>
+    <Name>Osc 3 Level</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>59</CC>
+    <Name>Osc 3 Balance</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>60</CC>
+    <Name>Noise Level</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>61</CC>
+    <Name>Noise Balance</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>62</CC>
+    <Name>Noise Colour</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>64</CC>
+    <Name>Sustain Pedal</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>65</CC>
+    <Name>Glide Active</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>66</CC>
+    <Name>Sostenuto</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>67</CC>
+    <Name>Routing</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>68</CC>
+    <Name>Filter 1 Type</Name>
+    <Range>10</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>69</CC>
+    <Name>Filter 1 Cutoff</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>70</CC>
+    <Name>Filter 1 Resonance</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>71</CC>
+    <Name>Filter 1 Drive</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>72</CC>
+    <Name>Filter 1 Keytrack</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>73</CC>
+    <Name>Filter 1 Env Amount</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>74</CC>
+    <Name>Filter 1 Env Velocity</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>75</CC>
+    <Name>Filter 1 CutoffMod</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>76</CC>
+    <Name>Filter 1 FM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>77</CC>
+    <Name>Filter 1 Pan</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>78</CC>
+    <Name>Filter 1 Panmod</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>79</CC>
+    <Name>Filter 2 Type</Name>
+    <Range>10</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>80</CC>
+    <Name>Filter 2 Cutoff</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>81</CC>
+    <Name>Filter 2 Resonance</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>82</CC>
+    <Name>Filter 2 Drive</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>83</CC>
+    <Name>Filter 2 Keytrack</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>84</CC>
+    <Name>Filter 2 Env Amount</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>85</CC>
+    <Name>Filter 2 Velocity</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>86</CC>
+    <Name>Filter 2 CutoffMod</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>87</CC>
+    <Name>Filter 2 FM</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>88</CC>
+    <Name>Filter 2 Pan</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>89</CC>
+    <Name>Filter 2 Panmod</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>90</CC>
+    <Name>Amp Volume</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>91</CC>
+    <Name>Amp Velocity</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>92</CC>
+    <Name>Amp Mod</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>93</CC>
+    <Name>FX 1 Mix</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>94</CC>
+    <Name>FX 2 Mix</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>95</CC>
+    <Name>FE Attack</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>96</CC>
+    <Name>FE Decay</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>97</CC>
+    <Name>FE Sustain</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>98</CC>
+    <Name>FE Decay 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>99</CC>
+    <Name>FE Sustain 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>100</CC>
+    <Name>FE Release</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>101</CC>
+    <Name>AE Attack</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>102</CC>
+    <Name>AE Decay</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>103</CC>
+    <Name>AE Sustain</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>104</CC>
+    <Name>AE Decay 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>105</CC>
+    <Name>AE Sustain 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>106</CC>
+    <Name>AE Release</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>107</CC>
+    <Name>E3 Attack</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>108</CC>
+    <Name>E3 Decay</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>109</CC>
+    <Name>E3 Sustain</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>110</CC>
+    <Name>E3 Decay 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>111</CC>
+    <Name>E3 Sustain 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>112</CC>
+    <Name>E3 Release</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>113</CC>
+    <Name>E4 Attack</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>114</CC>
+    <Name>E4 Decay</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>115</CC>
+    <Name>E4 Sustain</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>116</CC>
+    <Name>E4 Decay 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>117</CC>
+    <Name>E4 Sustain 2</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>118</CC>
+    <Name>E4 Release</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>120</CC>
+    <Name>All Sounds Off</Name>
+    <Range>1</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>121</CC>
+    <Name>Reset All Controllers</Name>
+    <Range>1</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>122</CC>
+    <Name>Local Control</Name>
+    <Range>127</Range>
+  </ControlChange>
+  <ControlChange>
+    <CC>123</CC>
+    <Name>All Notes Off</Name>
+    <Range>1</Range>
+  </ControlChange>
+</ControlChanges>
+</ControlChangeCollection>

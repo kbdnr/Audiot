@@ -1,0 +1,174 @@
+﻿<UserControl x:Class="AudiotModule.Views.MidiControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AudiotModule.Views"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:c="clr-namespace:CalcBinding;assembly=CalcBinding"
+             mc:Ignorable="d" 
+             d:DesignHeight="290" d:DesignWidth="420"
+             Width="420"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             prism:ViewModelLocator.AutoWireViewModel="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Card.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.CheckBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Popupbox.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <materialDesign:Flipper x:Name="MidiFlipper" Style="{StaticResource MaterialDesignCardFlipper}">
+        <materialDesign:Flipper.FrontContent>
+            <StackPanel x:Name="MidiFrontPanel" Margin="10" Orientation="Vertical" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <ToggleButton VerticalAlignment="Center" IsChecked="{Binding UserInputMode}">User Input</ToggleButton>
+                    <Label Content="Channel"/>
+                    <ComboBox x:Name="MidiSelector" ItemsSource="{Binding MidiChannels}" SelectedItem="{Binding SelectedChannel}" Height="20" Margin="0,0,20,0"/>
+                    <Button Content="Control Change View" Command="{x:Static materialDesign:Flipper.FlipCommand}" 
+                        Width="200" Margin="5"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Visibility="{c:Binding UIState.ShapeVisible}">
+                        <ToggleButton 
+                            VerticalAlignment="Center" 
+                            IsChecked="{Binding ChordMode}"
+                            Visibility="{Binding UIState.ShapeVisible}">
+                            Chord Mode
+                        </ToggleButton>
+                        
+                        <Label Content="Shape"/>
+                        <TextBox x:Name="ShapePat"  
+                                 HorizontalAlignment="Center" 
+                                 Margin="5" 
+                                 Width="75" 
+                                 Text="{Binding ShapeList}"/>
+                    </StackPanel>
+                    <ComboBox 
+                        ItemsSource="{Binding ScaleList}" 
+                        SelectedItem="{Binding SelectedScale}" 
+                        Visibility="{c:Binding !UIState.ShapeVisible}" 
+                        Width="200" 
+                        Margin="50,0,50,0"/>
+                    <TextBox 
+                        Text="{Binding RemainingCount}" 
+                        IsReadOnly="True"
+                        Visibility="{c:Binding !UIState.ShapeVisible}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <ComboBox ItemsSource="{Binding KeyList}" SelectedItem="{Binding SelectedKey}" Width="30"/>
+                    <StackPanel Orientation="Horizontal" Visibility="{c:Binding UIState.ProgVisible}">
+                        <Label Content="Prog"/>
+                        <TextBox x:Name="ProgPat"  HorizontalAlignment="Center" Margin="5" Width="75" Text="{Binding ProgressionList}"/>
+                    </StackPanel>
+
+                    
+                    
+                    <Label Content="Color"/>
+                    <TextBox x:Name="ColorPat"  HorizontalAlignment="Center" Margin="5" Width="75" Text="{Binding ColorList}"/>
+                    <Label Content="Inv"/>
+                    <TextBox x:Name="InvPat" HorizontalAlignment="Center" Margin="5" Width="75" Text="{Binding InversionList}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Visibility="{c:Binding !UserInputMode}">
+                    <Label Content="Length"/>
+                    <TextBox x:Name="LengthPat" HorizontalAlignment="Center" Margin="5" Width="75" Text="{Binding LengthList}"/>
+                    <Label Content="Repeat"/>
+                    <TextBox x:Name="Repeat" HorizontalAlignment="Center" Margin="5" Width="75" Text="{Binding Repeat}"/>
+                    <Label Content="Octave"/>
+                    <TextBox x:Name="OctPat" HorizontalAlignment="Center" Margin="5" Width="75" Text="{Binding OctaveList}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                    <Button Content="Play Melody" Height="20" Margin="10, 0, 10, 0" VerticalAlignment="Center" Command="{Binding PlayMelody1}"/>
+                    <CheckBox VerticalAlignment="Center" Margin="0, 0, 10, 0"/>
+                    <Slider x:Name="Slider1" Minimum="0" Maximum="127" Height="20" Value="{Binding S1Value}" Width="200" VerticalAlignment="Center">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseEnter">
+                                <i:InvokeCommandAction Command="{Binding Strum1BCommand}"/>
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MouseLeave">
+                                <i:InvokeCommandAction Command="{Binding Strum1ECommand}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Slider>
+                    <Label Content="{Binding S1Value}" VerticalAlignment="Center" Width="50"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                    <Button Content="Play Melody" Height="20" Margin="10, 0, 10, 0" VerticalAlignment="Center" Command="{Binding PlayMelody2}"/>
+                    <CheckBox VerticalAlignment="Center" Margin="0, 0, 10, 0"/>
+                    <Slider x:Name="Slider2" Minimum="0" Maximum="127" Height="20" Value="{Binding S2Value}" Width="200" VerticalAlignment="Center">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseEnter">
+                                <i:InvokeCommandAction Command="{Binding Strum2BCommand}"/>
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MouseLeave">
+                                <i:InvokeCommandAction Command="{Binding Strum2ECommand}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Slider>
+                    <Label Content="{Binding S2Value}" VerticalAlignment="Center" Width="50"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                    <Button Content="Play Melody" Height="20" Margin="10, 0, 10, 0" VerticalAlignment="Center" Command="{Binding PlayMelody3}" />
+                    <CheckBox VerticalAlignment="Center" Margin="0, 0, 10, 0"/>
+                    <Slider x:Name="Slider3" Minimum="0" Maximum="127" Height="20" Value="{Binding S3Value}" Width="200" VerticalAlignment="Center">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseEnter">
+                                <i:InvokeCommandAction Command="{Binding Strum3BCommand}"/>
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MouseLeave">
+                                <i:InvokeCommandAction Command="{Binding Strum3ECommand}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Slider>
+                    <Label Content="{Binding S3Value}" VerticalAlignment="Center" Width="50"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                    <Button Content="Play Melody" Height="20" Margin="10, 0, 10, 0" VerticalAlignment="Center" Command="{Binding PlayMelody4}" />
+                    <CheckBox VerticalAlignment="Center" Margin="0, 0, 10, 0"/>
+                    <Slider x:Name="Slider4" Minimum="0" Maximum="127" Height="20" Value="{Binding S4Value}" Width="200" VerticalAlignment="Center">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseEnter">
+                                <i:InvokeCommandAction Command="{Binding Strum4BCommand}"/>
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MouseLeave">
+                                <i:InvokeCommandAction Command="{Binding Strum4ECommand}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Slider>
+                    <Label Content="{Binding S4Value}" VerticalAlignment="Center" Width="50"/>
+                </StackPanel>
+
+                <Button Command="{Binding StartInvProgressionCommand}" HorizontalAlignment="Center" Width="150" Margin="5">Start Inv Progression</Button>
+            </StackPanel>
+        </materialDesign:Flipper.FrontContent>
+        <materialDesign:Flipper.BackContent>
+            <StackPanel x:Name="MidiBackPanel" Margin="5" Orientation="Vertical" HorizontalAlignment="Center" Width="400">
+                <Button Content="Midi Note View" Command="{x:Static materialDesign:Flipper.FlipCommand}" 
+                        Width="200" Margin="5"/>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <ComboBox ItemsSource="{Binding ConfigList}" SelectedItem="{Binding SelectedConfig}" Width="200" Margin="0,0,10,0"/>
+                    <Button x:Name="AddControlLineButton" Content="+" Width="25" Margin="0,0,10,0" Command="{Binding AddControlCommand}" Click="AddControlLineButton_Click"/>
+                    <Button x:Name="RemoveControlLineButton" Content="-" Width="25" Command="{Binding RemoveControlCommand}" Click="RemoveControlLineButton_Click"/>
+                </StackPanel>
+
+                <ScrollViewer HorizontalAlignment="Center" Height="250">
+                    <ItemsControl x:Name="ControlChangeItems" Width="350"/>
+                </ScrollViewer>
+
+                <Button x:Name="AutoPatchButton" Content="AutoPatch" Width="250" Margin="20" Click="AutoPatchButton_Click"/>
+            </StackPanel>
+        </materialDesign:Flipper.BackContent>
+    </materialDesign:Flipper>
+</UserControl>
