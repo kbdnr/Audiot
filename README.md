@@ -11,6 +11,7 @@ Configurations can be found in ```AudiotLogic/ControlConfigs/```
 
 ### Use
 ![alt text](https://raw.githubusercontent.com/kbdnr/Audiot/master/InUse.gif "Audiot In Use")
+[Demo Track](https://spednar.bandcamp.com/track/proj-2)
 
 ### Build
 - Restore NuGet dependencies
