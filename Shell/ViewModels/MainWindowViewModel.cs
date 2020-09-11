@@ -14,7 +14,6 @@ namespace Shell.ViewModels
         #region Private Vars
         private string _status;
         private string _title = "Audiot";
-        private string _iconLocation = @"/Shell;component/Resources/SDI_chevron_RGB.jpg";
 
         #endregion
 
@@ -29,12 +28,6 @@ namespace Shell.ViewModels
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }
-        }
-
-        public string IconLocation
-        {
-            get { return _iconLocation; }
-            set { SetProperty(ref _iconLocation, value); }
         }
         #endregion
 
@@ -54,7 +47,6 @@ namespace Shell.ViewModels
             //Event Handling
             _ea.GetEvent<TitleEvent>().Subscribe(UpdateTitle);
             _ea.GetEvent<StatusMessageEvent>().Subscribe(UpdateStatus);
-            _ea.GetEvent<IconEvent>().Subscribe(SetIcon);
 
             SaveCommand = new DelegateCommand(Save);
             NewCommand = new DelegateCommand(New);
@@ -62,11 +54,6 @@ namespace Shell.ViewModels
         #endregion
 
         #region Commands
-        private void SetIcon(string iconLocation)
-        {
-            IconLocation = iconLocation;
-        }
-
         private void UpdateTitle(string title)
         {
             Title = title;
